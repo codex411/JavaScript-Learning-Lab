@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Edit your note in the Notes app">
+        <title>Edit Note - Notes App</title>
         <link href="/styles/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="container">
                 <h1 class="header__title">Notes app</h1>
                 <h2 class="header__subtitle">Take notes and never forget</h2>
             </div>
-        </div>
-        <div class="actions">
+        </header>
+        <nav class="actions">
             <div class="actions__container actions__container--spaced">
                 <a href="/index.html">Home</a>
                 <span id="last-edited"></span>
             </div>
-        </div>
-        <div class="container">
-                <input id="note-title" class="title-input" placeholder="Note title.">
-                <textarea id="note-text" class="body-input" placeholder="Enter note text."></textarea>
-                <button id="remove-note" class="button button--secondary">Remove note</button>
-        </div>
+        </nav>
+        <main class="container">
+            <input id="note-title" class="title-input" placeholder="Note title" aria-label="Note title">
+            <textarea id="note-text" class="body-input" placeholder="Enter note text" aria-label="Note content"></textarea>
+            <button id="remove-note" class="button button--secondary">Remove note</button>
+        </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment-with-locales.min.js"></script>     
         <script src="/scripts/notes-functions.js"></script>

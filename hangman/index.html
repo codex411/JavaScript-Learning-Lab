@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
-        <title>Hangman</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Interactive Hangman word guessing game">
+        <title>Hangman Game</title>
         <link href="/styles/styles.css" rel="stylesheet">
     </head>
     <body>
-        <div>
+        <main>
             <div id="word-to-guess" class="puzzle"></div>
             <p id="remaining-guesses"></p>
             <button id="reset" class="button">Reset</button>
-        </div>
+        </main>
         
         <script src="/scripts/request.js"></script>        
         <script src="/scripts/hangman.js"></script>

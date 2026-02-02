@@ -1,36 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>To-do</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Todo list application - manage your tasks efficiently">
+        <title>Todo App</title>
         <link href="/styles/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="container">
-                <h1 class="header__title">To-do app</h1>
+                <h1 class="header__title">Todo app</h1>
                 <h2 class="header__subtitle">What do you need to do?</h2>
             </div>
-        </div>
+        </header>
 
         <div class="actions">
             <div class="actions__container">
-                    <input id="search-notes" class="input" type="text" placeholder="Search notes">
-                    <label class="checkbox">
-                        <input type="checkbox" id="hide-completed-todos"> Hide Completed todos.
-                    </label>
+                <input id="search-notes" class="input" type="text" placeholder="Search todos" aria-label="Search todos">
+                <label class="checkbox">
+                    <input type="checkbox" id="hide-completed-todos"> Hide completed todos
+                </label>
             </div>
         </div>
 
-        <div class="container">
-                <div id="todos"></div>
-                <form id="add-notes-form">
-                    <input type="text" class="input" placeholder="Add note" name="todoToAdd">
-                    <button class="button">Submit</button> 
-                </form>
-        </div>
-       
+        <main class="container">
+            <div id="todos"></div>
+            <form id="add-notes-form">
+                <input type="text" class="input" placeholder="Add todo" name="todoToAdd" aria-label="New todo">
+                <button type="submit" class="button">Add</button> 
+            </form>
+        </main>
         
+        <script src="/scripts/uuidv4.js"></script>
+        <script src="/scripts/todo-functions.js"></script>
+        <script src="/scripts/todo-app.js"></script>
     </body>
-    <script src="/scripts/uuidv4.js"></script>
-    <script src="/scripts/todo-functions.js"></script>
-    <script src="/scripts/todo-app.js"></script>
 </html>
