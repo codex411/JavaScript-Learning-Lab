@@ -3,7 +3,7 @@ const account = {
     expenses: [],
     income: [],
     addExpense: function (expense, amount) {
-        //account.expenses.unshift({ It's better to use ".this"
+        // account.expenses.unshift({ It's better to use "this"
         this.expenses.push({
             description: expense,
             amount: amount

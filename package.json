@@ -1,0 +1,26 @@
+{
+  "name": "javascript-learning-lab",
+  "version": "1.0.0",
+  "description": "A comprehensive collection of JavaScript exercises, examples, and interactive applications",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "serve": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "javascript",
+    "learning",
+    "tutorial",
+    "examples",
+    "exercises"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
